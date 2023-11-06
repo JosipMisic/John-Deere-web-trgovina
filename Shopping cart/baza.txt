@@ -1,0 +1,12 @@
+CREATE TABLE narudzba(
+	id INT(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    userId INT(11) NOT NULL,
+    creationTime DATETIME DEFAULT CURRENT_TIMESTAMP
+)
+CREATE TABLE narudzbaProduct(
+	id INT(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    userId INT(11) NOT NULL,
+    productId INT(11) NOT NULL,
+    CONSTRAINT FK_userId FOREIGN KEY(userId) REFERENCES users(users_id),
+    CONSTRAINT FK_productId FOREIGN KEY(productId) REFERENCES producttb(id)
+)
