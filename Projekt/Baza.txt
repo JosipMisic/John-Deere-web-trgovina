@@ -1,0 +1,5 @@
+INSERT INTO Producttb (product_name, product_price, product_image)
+        VALUES ('Motor R9 590',50000,'./upload/product1.jpg'),
+                        ('Kabina All-access',25000,'./upload/product2.jpg'),
+                        ('Sjedala R9 590',10000,'./upload/product3.jpg'),
+                        ('Navigacija Gen-4',5000,'./upload/product4.jpg');
